@@ -1,3 +1,5 @@
+wsgi/bin/
+wsgi/lib/
 .project
 *.pyc
 *.pyo
