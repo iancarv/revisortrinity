@@ -6,5 +6,5 @@ setup(name='Revisor Trinity',
       author='Ian',
       author_email='iancarv@gmail.com',
       url='http://trinitymidia.com.br',
-      install_requires=['Flask>=0.7.2', 'MarkupSafe'],
+      install_requires=['Flask>=0.7.2', 'MarkupSafe', 'pymongo'],
      )
