@@ -21,7 +21,7 @@
 		<li class="select_button" id="save" verbeteID="{{ verbete.normalized }}">Save</li>
 		<li class="select_button" id="refresh">Refresh</li>
 	</ul>
-	<div id="final" class="utilBox selected">
+	<div id="final" class="utilBox">
 		<div> {{ verbete.word }} </div>
 		{% if verbete.phonema is string %}
 			<div> {{ verbete.phonema }} </div>
@@ -32,12 +32,14 @@
 		{% endif %}
 	    <div id="detailDescription">{{ verbete.description|safe }}</div>
 	</div>
-	<div id="css" class="utilBox">
+	<br>
+	<br>
+	<div id="css" class="utilBox selectable">
 	    <pre id="cssContent" contenteditable="">
 	          {{ css.text|safe }}
 	    </pre>
     </div>
-    <div id="html" class="utilBox">
+    <div id="html" class="utilBox selectable selected">
 	    <pre id="htmlContent" contenteditable="">
 	          {{ verbete.description }}
 	    </pre>

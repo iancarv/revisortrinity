@@ -1,9 +1,10 @@
 .utilBox {
     border: solid 1px black;
-    display: none;
 }
-
-.utilBox.selected {
+.selectable {
+	display: none;
+}
+.selectable.selected {
     display: inherit;
 }
 
