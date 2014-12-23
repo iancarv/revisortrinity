@@ -13,8 +13,8 @@
 		<li class="select_button"><a href="{{ next.normalized }}"> Proximo </a></li>
 	</ul>
 	<ul>
-		<li class="select_button view" btn="html">HTML</li>
-		<li class="select_button view" btn="css">CSS</li>
+		<li class="select_button" id="save" verbeteID="{{ verbete.normalized }}">Save</li>
+		<li class="select_button" id="refresh">Refresh</li>
 	</ul>
 	<div id="final" class="utilBox">
 		<div> {{ verbete.word }} </div>
@@ -29,10 +29,9 @@
 	</div>
 	<br>
 	<ul>
-		<li class="select_button" id="save" verbeteID="{{ verbete.normalized }}">Save</li>
-		<li class="select_button" id="refresh">Refresh</li>
+		<li class="select_button view" btn="html">HTML</li>
+		<li class="select_button view" btn="css">CSS</li>
 	</ul>
-	<br>
 	<div id="css" class="utilBox selectable">
 	    <pre id="cssContent" contenteditable="">
 	          {{ css.text|safe }}
