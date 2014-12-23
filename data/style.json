@@ -1,6 +1,6 @@
 {
     "type": "css",
-    "text": "@font-face {
+    "text": "@font-face { \
         font-family: HelveaticaNeueLTS;\
         src: url(\"/static/fonts/Helvetica family/HelveticaNeueLTStd-Md.otf\") format(\"opentype\");        }\
 \
