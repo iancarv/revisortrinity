@@ -64,7 +64,7 @@
 #detailDescription > verbete {\
     font-family: AGaramondBold;\
     font-size: 20px;\
-    color: rgb(214, 0, 128);\
+    color: rgb(236, 0, 140);\
 
 }\
 #detailDescription > ex {font-family: HelveticaNeueLTStd-light;}\
