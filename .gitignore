@@ -5,3 +5,4 @@ wsgi/lib/
 *.pyo
 *~
 .DS_Store
+local_data/

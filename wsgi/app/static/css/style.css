@@ -1,0 +1,17 @@
+.utilBox {
+    border: solid 1px black;
+    display: none;
+}
+
+.utilBox.selected {
+    display: inherit;
+}
+
+li.select_button {
+    border: solid black 1px;
+    border-radius: 9px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: inline-block;
+}

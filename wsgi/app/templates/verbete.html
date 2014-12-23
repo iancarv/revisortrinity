@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>{{ verbete.word }}</title>
+    <style type="text/css" id="style"></style>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-2.1.1.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+</head>
+<body>
+	<ul>
+		<li class="select_button view" btn="final">Final</li>
+		<li class="select_button view" btn="html">HTML</li>
+		<li class="select_button view" btn="css">CSS</li>
+	</ul>
+	<ul>
+		<li class="select_button" id="save" verbeteID="{{ verbete.normalized }}">Save</li>
+		<li class="select_button" id="refresh">Refresh</li>
+	</ul>
+	<div id="final" class="utilBox selected">
+		<div> {{ verbete.word }} </div>
+		{% if verbete.phonema is string %}
+			<div> {{ verbete.phonema }} </div>
+			{% else %}
+			    {% for phonema in verbete.phonema %}
+				    <div>{{ phonema }}</div>
+			   {% endfor %}
+		{% endif %}
+	    <div id="detailDescription">{{ verbete.description|safe }}</div>
+	</div>
+	<div id="css" class="utilBox">
+	    <pre id="cssContent" contenteditable="">
+	          {{ css.text|safe }}
+	    </pre>
+    </div>
+    <div id="html" class="utilBox">
+	    <pre id="htmlContent" contenteditable="">
+	          {{ verbete.description }}
+	    </pre>
+    </div>
+
+</body>
+</html>

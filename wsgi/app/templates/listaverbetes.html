@@ -1,0 +1,13 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Lista Verbetes</title>
+</head>
+<body>
+    <ul id="Letras">
+    	{% for verbete in groups %}
+    		<li><a href="verbete/{{ verbete.normalized }}"> {{ verbete.word }} </a></li>
+    	{% endfor %}
+    </ul>
+</body>
+</html>
