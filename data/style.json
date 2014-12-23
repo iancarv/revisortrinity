@@ -1,73 +1,72 @@
 {
-"type": "css",
-"text": "\
-@font-face {
-    font-family: HelveaticaNeueLTS;\
-    src: url(\"/static/fonts/Helvetica family/HelveticaNeueLTStd-Md.otf\") format(\"opentype\");        }\
-\
-@font-face {\
-    font-family: HelveticaNeueLTStd-Roman;\
-    src: url(\"/static/fonts/Helvetica family/HelveticaNeueLTStd-Roman.ttf\") format(\"truetype\");        }\
-\
-@font-face {\
-    font-family: HelveticaNeueLTStd-light;\
-    src: url(\"/static/fonts/Helvetica family/HelveticaNeueLTStd-Th.otf\") format(\"opentype\");        }\
-\
-@font-face {\
-    font-family: HelveticaNeueLTStd-LightIt;\
-    src: url(\"/static/fonts/Helvetica family/HelveticaNeueLTStd-LtIt.ttf\") format(\"truetype\");        }\
-\
-@font-face {\
-    font-family: HelveticaNeueLTStd-Bold;\
-    src: url(\"/static/fonts/Helvetica family/HelveticaNeueLTStd-Bd.otf\") format(\"opentype\");        }\
-@font-face {\
-    font-family: Fonetics;\
-    src: url(\"/static/fonts/TimesLTStd-Phonetic.otf\") format(\"truetype\");\
-}\
-\
-@font-face {\
-    font-family: AGaramond;\
-    src: url(\"/static/fonts/AGaramondPro-Regular.otf\") format(\"opentype\");\
-}\
-\
-@font-face {\
-    font-family: AGaramondItalic;\
-    src: url(\"/static/fonts/AGaramondPro-Italic.otf\") format(\"opentype\");\
-}\
-\
-@font-face {\
-    font-family: AGaramondBold;\
-    src: url(\"/static/fonts/AGaramondPro-Bold.otf\") format(\"opentype\");\
-}\
-\
-#detailDescription {\
-    font-family: AGaramond;\
-    font-size: 19px;\
-}\
-#detailDescription > b {\
-    font-family: AGaramondBold;\
-    font-style:normal;\
-    font-size: 15px;\
-}\
-\
-#detailDescription > i {\
-    font-family: AGaramondItalic;\
-    font-style:normal;\
-    font-weight: normal;\
-}\
-\
-#detailDescription > losango {\
-    color: #b9006e;\
-    font-size: 13px;\
-}\
-\
-#detailDescription > verbete {\
-    font-family: AGaramondBold;\
-    font-size: 20px;\
-    color: rgb(236, 0, 140);\
+    "type": "css",
+    "text": "@font-face {
+        font-family: HelveaticaNeueLTS;\
+        src: url(\"/static/fonts/Helvetica family/HelveticaNeueLTStd-Md.otf\") format(\"opentype\");        }\
+    \
+    @font-face {\
+        font-family: HelveticaNeueLTStd-Roman;\
+        src: url(\"/static/fonts/Helvetica family/HelveticaNeueLTStd-Roman.ttf\") format(\"truetype\");        }\
+    \
+    @font-face {\
+        font-family: HelveticaNeueLTStd-light;\
+        src: url(\"/static/fonts/Helvetica family/HelveticaNeueLTStd-Th.otf\") format(\"opentype\");        }\
+    \
+    @font-face {\
+        font-family: HelveticaNeueLTStd-LightIt;\
+        src: url(\"/static/fonts/Helvetica family/HelveticaNeueLTStd-LtIt.ttf\") format(\"truetype\");        }\
+    \
+    @font-face {\
+        font-family: HelveticaNeueLTStd-Bold;\
+        src: url(\"/static/fonts/Helvetica family/HelveticaNeueLTStd-Bd.otf\") format(\"opentype\");        }\
+    @font-face {\
+        font-family: Fonetics;\
+        src: url(\"/static/fonts/TimesLTStd-Phonetic.otf\") format(\"truetype\");\
+    }\
+    \
+    @font-face {\
+        font-family: AGaramond;\
+        src: url(\"/static/fonts/AGaramondPro-Regular.otf\") format(\"opentype\");\
+    }\
+    \
+    @font-face {\
+        font-family: AGaramondItalic;\
+        src: url(\"/static/fonts/AGaramondPro-Italic.otf\") format(\"opentype\");\
+    }\
+    \
+    @font-face {\
+        font-family: AGaramondBold;\
+        src: url(\"/static/fonts/AGaramondPro-Bold.otf\") format(\"opentype\");\
+    }\
+    \
+    #detailDescription {\
+        font-family: AGaramond;\
+        font-size: 19px;\
+    }\
+    #detailDescription > b {\
+        font-family: AGaramondBold;\
+        font-style:normal;\
+        font-size: 15px;\
+    }\
+    \
+    #detailDescription > i {\
+        font-family: AGaramondItalic;\
+        font-style:normal;\
+        font-weight: normal;\
+    }\
+    \
+    #detailDescription > losango {\
+        color: #b9006e;\
+        font-size: 13px;\
+    }\
+    \
+    #detailDescription > verbete {\
+        font-family: AGaramondBold;\
+        font-size: 20px;\
+        color: rgb(236, 0, 140);\
 
-}\
-#detailDescription > ex {font-family: HelveticaNeueLTStd-light;}\
-#detailDescription > ex > i{font-style:oblique;font-weight: normal;}\
-#detailDescription > ex > italico{font-style:oblique;font-weight: normal;}"
+    }\
+    #detailDescription > ex {font-family: HelveticaNeueLTStd-light;}\
+    #detailDescription > ex > i{font-style:oblique;font-weight: normal;}\
+    #detailDescription > ex > italico{font-style:oblique;font-weight: normal;}"
 }
