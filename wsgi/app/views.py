@@ -4,6 +4,7 @@ import os
 
 from app import app, envs, collection, db
 from flask import render_template, request
+from bson.objectid import ObjectId
 
 
 @app.route('/')
@@ -19,8 +20,19 @@ def index():
 @app.route('/verbete/<verbete>')
 def show_user_profile(verbete):
     a = collection.find_one({'normalized': verbete})
+    print(a['_id'])
+    print(str(a['_id']))
+    a_id = int(str(a['_id']), base=16)
+    print(hex(a_id - 1)[2:])
+    next = collection.find_one({'_id': ObjectId(hex(a_id + 1)[2:])})
+    prev = collection.find_one({'_id': ObjectId(hex(a_id - 1)[2:])})
     b = db.css.find_one({'type': 'css'})
-    return render_template('verbete.html', verbete=a, css=b)
+    print(a)
+    return render_template('verbete.html',
+                           verbete=a,
+                           css=b,
+                           next=next,
+                           prev=prev)
 
 
 @app.route('/savecss', methods=['POST'])
@@ -35,5 +47,6 @@ def saveHTML():
     verbete_id = request.form.get('id')
     text = request.form.get('html')
     print(verbete_id)
-    print(collection.update({'normalized':verbete_id}, {'$set': {'description' : text}}, upsert=False))
+    print(collection.update({'normalized':verbete_id},
+        {'$set': {'description' : text}}, upsert=False))
     return "OK"
