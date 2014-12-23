@@ -16,10 +16,6 @@
 		<li class="select_button view" btn="html">HTML</li>
 		<li class="select_button view" btn="css">CSS</li>
 	</ul>
-	<ul>
-		<li class="select_button" id="save" verbeteID="{{ verbete.normalized }}">Save</li>
-		<li class="select_button" id="refresh">Refresh</li>
-	</ul>
 	<div id="final" class="utilBox">
 		<div> {{ verbete.word }} </div>
 		{% if verbete.phonema is string %}
@@ -32,6 +28,10 @@
 	    <div id="detailDescription">{{ verbete.description|safe }}</div>
 	</div>
 	<br>
+	<ul>
+		<li class="select_button" id="save" verbeteID="{{ verbete.normalized }}">Save</li>
+		<li class="select_button" id="refresh">Refresh</li>
+	</ul>
 	<br>
 	<div id="css" class="utilBox selectable">
 	    <pre id="cssContent" contenteditable="">
