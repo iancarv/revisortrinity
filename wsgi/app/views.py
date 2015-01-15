@@ -51,5 +51,5 @@ def saveHTML():
     logging.debug(phonema)
     logging.debug(verbete_id)
     print(collection.update({'normalized':verbete_id},
-        {'$set': {'description' : desc, 'phonema' : phon}}, upsert=False))
+        {'$set': {'description' : desc}}, upsert=False))
     return "OK"
