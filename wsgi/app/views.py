@@ -47,6 +47,7 @@ def saveHTML():
     verbete_id = request.form.get('id')
     desc = request.form.get('html')
     phon = request.form.get('phonema')
+    print(phonema)
     print(verbete_id)
     print(collection.update({'normalized':verbete_id},
         {'$set': {'description' : desc, 'phonema' : phon}}, upsert=False))
