@@ -27,8 +27,8 @@ var APP = APP || {
        $("#style").text($("#cssContent").text());
     },
     updateHtml: function () {
-        $("#detailDescription").html($("#htmlContent").text().trim())
-        $("#phonDiv").html($("#phonContent").text().trim())
+        $("#detailDescription").html($("#htmlContent").text().trim());
+        $("#phonDiv").html($("#phonContent").text().trim());
     },
     refresh: function () {
         this.updateStyle();
@@ -41,6 +41,7 @@ var APP = APP || {
     },
     saveHtml: function (id) {
         console.log(id)
+        console.log($("#phonContent").text())
         $.post('/savehtml', {html: $("#htmlContent").text().trim(), id: id, phonema: $("#phonContent").text().trim()}, function (data){
             console.log(data);
         });
