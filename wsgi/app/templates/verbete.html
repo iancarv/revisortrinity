@@ -19,7 +19,7 @@
 	<div id="final" class="utilBox">
 		<div> {{ verbete.word }} </div>
 		{% if verbete.phonema is string %}
-			<div> {{ verbete.phonema }} </div>
+			<div id="phonDiv"> {{ verbete.phonema }} </div>
 			{% else %}
 			    {% for phonema in verbete.phonema %}
 				    <div>{{ phonema }}</div>
@@ -32,15 +32,14 @@
 		<li class="select_button view" btn="html">HTML</li>
 		<li class="select_button view" btn="css">CSS</li>
 	</ul>
+    <div class="utilBox">
+	    <pre id="phonContent" contenteditable="">{{ verbete.phonema }}</pre>
+    </div>
 	<div id="css" class="utilBox selectable">
-	    <pre id="cssContent" contenteditable="">
-	          {{ css.text|safe }}
-	    </pre>
+	    <pre id="cssContent" contenteditable="">{{ css.text|safe }}</pre>
     </div>
     <div id="html" class="utilBox selectable selected">
-	    <pre id="htmlContent" contenteditable="">
-	          {{ verbete.description }}
-	    </pre>
+	    <pre id="htmlContent" contenteditable="">{{ verbete.description }}</pre>
     </div>
 
 </body>

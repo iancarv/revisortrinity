@@ -27,8 +27,8 @@ var APP = APP || {
        $("#style").text($("#cssContent").text());
     },
     updateHtml: function () {
-        $("#detailDescription").html($("#htmlContent").text().trim());
-        $("#phonDiv").html($("#phonContent").text().trim());
+        $("#detailDescription").html($("#htmlContent").text().trim())
+        $("#phonDiv").html($("#phonContent").text().trim())
     },
     refresh: function () {
         this.updateStyle();

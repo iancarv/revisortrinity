@@ -45,8 +45,9 @@ def saveCSS():
 @app.route('/savehtml', methods=['POST'])
 def saveHTML():
     verbete_id = request.form.get('id')
-    text = request.form.get('html')
+    desc = request.form.get('html')
+    phon = request.form.get('phonema')
     print(verbete_id)
     print(collection.update({'normalized':verbete_id},
-        {'$set': {'description' : text}}, upsert=False))
+        {'$set': {'description' : desc, 'phonema' : phon}}, upsert=False))
     return "OK"
