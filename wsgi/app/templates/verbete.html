@@ -20,10 +20,6 @@
 		<div> {{ verbete.word }} </div>
 		{% if verbete.phonema is string %}
 			<div id="phonDiv"> {{ verbete.phonema }} </div>
-			{% else %}
-			    {% for phonema in verbete.phonema %}
-				    <div>{{ phonema }}</div>
-			   {% endfor %}
 		{% endif %}
 	    <div id="detailDescription">{{ verbete.description|safe }}</div>
 	</div>
