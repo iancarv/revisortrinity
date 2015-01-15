@@ -18,9 +18,7 @@
 	</ul>
 	<div id="final" class="utilBox">
 		<div> {{ verbete.word }} </div>
-		{% if verbete.phonema is string %}
-			<div id="phonDiv"> {{ verbete.phonema }} </div>
-		{% endif %}
+		<div id="phonDiv"> {% if verbete.phonema is string %}{{ verbete.phonema }}{% endif %}</div>
 	    <div id="detailDescription">{{ verbete.description|safe }}</div>
 	</div>
 	<br>
